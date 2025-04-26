@@ -25,6 +25,9 @@ spec:
       - image: goquazirafi/currency-conversion:v1
         imagePullPolicy: IfNotPresent
         name: currency-conversion
+        env:
+          - name: CURRENCY_EXCHANGE_SERVICE_HOST
+            value: http://currency-exchange
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
 ---
