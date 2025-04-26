@@ -1,4 +1,4 @@
-**Microservices Demo with Docker, Kubernetes, and GKE**
+**Microservices Demo with Docker, Kubernetes, and GKE**: 
 This project demonstrates the deployment of microservices using Docker and Kubernetes on Google Kubernetes Engine (GKE).
 It includes two containerized Spring Boot services — Currency Exchange and Currency Conversion — featuring inter-service communication.
 The project is designed for hands-on learning of cloud-native application development and orchestration.
