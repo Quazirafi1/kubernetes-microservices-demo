@@ -27,7 +27,11 @@ spec:
         name: currency-conversion
         env:
           - name: CURRENCY_EXCHANGE_SERVICE_HOST
-            value: http://currency-exchange
+        #     value: http://currency-exchange
+            valueFrom: 
+              configMapKeyRef:
+                key: CURRENCY_EXCHANGE_SERVICE_HOST
+                name: currency-conversion-config-map
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
 ---
